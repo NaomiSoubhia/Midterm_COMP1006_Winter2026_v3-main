@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $rating       = (int)($_POST['rating'] ?? 0);
 
   // Simple validation (beginner-friendly)
-  if ($author === '' || $title === '' || $review_text === '' || $rating =='') {
+  if ($author === '' || $title === '' || $review_text === '' || $rating ==='') {
     $error = "Title, author, rating and review are required.";
   } else {
 

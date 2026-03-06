@@ -26,5 +26,7 @@
         <a href="reviews.php">Go to Admin Page</a>
     </p>
 
-</body>
-</html>
+
+<?php
+require   "includes/footer.php";
+?>

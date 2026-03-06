@@ -82,3 +82,6 @@ $reviews = $stmt->fetchAll();
   <a href="index.php">Back to Review Form</a>
 </main>
 
+<?php
+require   "includes/footer.php";
+?>

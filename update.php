@@ -141,4 +141,6 @@ if (!$review) {
 
   </form>
 </main>
-
+<?php
+require   "includes/footer.php";
+?>

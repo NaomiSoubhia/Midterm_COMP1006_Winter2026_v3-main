@@ -1,12 +1,22 @@
 <?php
+require "includes/header.php";
+require "includes/connect.php";
 
 /**
  * Admin view: list all reviews and provide an Update and Delete button.
  * Clicking Update sends the review id to update.php via the URL.
  */
 
-require "includes/header.php";
-require "includes/connect.php";
+
+// ### 2. Admin Page (Read) (5 marks) 
+
+// Create an admin page that:
+
+// - Retrieves all book reviews from the database
+// - Displays them in a dynamically generated HTML table
+// - Includes Update and Delete options for each review
+
+
 
 // Get all reviews (newest first)
 $sql = "SELECT * FROM reviews ORDER BY created_at DESC";
@@ -29,6 +39,7 @@ $reviews = $stmt->fetchAll();
             <th>ID</th>
             <th>Title</th>
             <th>Author</th>
+             <th>Rating</th>
             <th>Review</th>
             <th>Created at</th>
 
@@ -43,6 +54,7 @@ $reviews = $stmt->fetchAll();
 
               <td><?= htmlspecialchars($review['title']); ?></td>
               <td><?= htmlspecialchars($review['author']); ?></td>
+               <td><?= htmlspecialchars($review['rating']); ?></td>
               <td><?= htmlspecialchars($review['review_text']); ?></td>
 
               <td><?= htmlspecialchars($review['created_at']); ?></td>
@@ -67,6 +79,6 @@ $reviews = $stmt->fetchAll();
     </div>
 
   <?php endif; ?>
-  <a href="index.php">Back to Order Form</a>
+  <a href="index.php">Back to Review Form</a>
 </main>
 

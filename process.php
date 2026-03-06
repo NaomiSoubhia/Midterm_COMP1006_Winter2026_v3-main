@@ -2,6 +2,20 @@
 //Connecting the database
 require "includes/connect.php";  
 
+
+
+
+// 1. Submit a Book Review (Create) (5 marks) 
+
+// Using the provided HTML form:
+
+// - Accept user input
+// - Sanitize and validate the form data on the server
+// - If valid, store the review in the database
+// - If invalid, display an error message and do not insert the record
+
+
+
 //Check if the method of the form is POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     die('Invalid request');

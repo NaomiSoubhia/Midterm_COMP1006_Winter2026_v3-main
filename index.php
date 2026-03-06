@@ -23,7 +23,7 @@
     </form>
 
     <p>
-        <a href="admin.php">Go to Admin Page</a>
+        <a href="reviews.php">Go to Admin Page</a>
     </p>
 
 </body>

@@ -1,4 +1,18 @@
 <?php 
+
+
+// Database
+// You will work with a table named:
+// `reviews`
+// Fields:
+// - `id` (Primary Key, Auto Increment)
+// - `title`
+// - `author`
+// - `rating`
+// - `review_text`
+// - `created_at`
+// You must connect to the database using PDO.
+
 $host = "localhost"; //hostname
 $db = "book_manager"; //database name
 $user = "root"; //username
